@@ -1,0 +1,23 @@
+# Xcode
+DerivedData/
+build/
+*.xcarchive
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# User state
+*.xcuserstate
+xcuserdata/
+*.moved-aside
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# macOS
+.DS_Store
+
+# Codemagic/local secrets
+.env
+codemagic.env
