@@ -1,3 +1,4 @@
+import PrizeRinkIQKit
 import SwiftUI
 
 @main
@@ -6,8 +7,10 @@ struct PrizeRinkIQApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(store)
+            PrizeRinkIQRootFlow(configuration: .standardPreset) {
+                ContentView()
+                    .environmentObject(store)
+            }
         }
     }
 }

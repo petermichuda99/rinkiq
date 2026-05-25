@@ -14,6 +14,7 @@
 		9B2001092CE9000100C0B001 /* StrategyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2001082CE9000100C0B001 /* StrategyEngine.swift */; };
 		9B20010B2CE9000100C0B001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B20010A2CE9000100C0B001 /* Assets.xcassets */; };
 		9B2001172CE9000100C0B001 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9B2001162CE9000100C0B001 /* PrivacyInfo.xcprivacy */; };
+		9B20011B2CE9000100C0B001 /* PrizeRinkIQKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9B20011A2CE9000100C0B001 /* PrizeRinkIQKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B20011B2CE9000100C0B001 /* PrizeRinkIQKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,9 @@
 			dependencies = (
 			);
 			name = PrizeRinkIQ;
+			packageProductDependencies = (
+				9B20011A2CE9000100C0B001 /* PrizeRinkIQKit */,
+			);
 			productName = PrizeRinkIQ;
 			productReference = 9B2000F72CE9000100C0B001 /* PrizeRinkIQ.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 9B2000EE2CE9000100C0B001;
+			packageReferences = (
+				9B2001192CE9000100C0B001 /* XCLocalSwiftPackageReference "Packages/PrizeRinkIQKit" */,
+			);
 			productRefGroup = 9B2000F82CE9000100C0B001 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +369,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9B2001192CE9000100C0B001 /* XCLocalSwiftPackageReference "Packages/PrizeRinkIQKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/PrizeRinkIQKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9B20011A2CE9000100C0B001 /* PrizeRinkIQKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9B2001192CE9000100C0B001 /* XCLocalSwiftPackageReference "Packages/PrizeRinkIQKit" */;
+			productName = PrizeRinkIQKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9B2000EF2CE9000100C0B001 /* Project object */;
 }
